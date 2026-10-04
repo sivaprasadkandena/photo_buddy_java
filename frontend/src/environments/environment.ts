@@ -1,5 +1,6 @@
-export const environment = {
-  production: false,
-  apiBaseUrl: 'http://localhost:8080/api',
-  websocketUrl: 'http://localhost:8080/ws',
-};
+  export const environment = {
+    production: false,
+    apiBaseUrl: 'https://photo-buddy-backend.onrender.com/api',
+      websocketUrl: 'https://photo-buddy-backend.onrender.com/ws'
+  
+  };
