@@ -21,7 +21,7 @@ export class LocationService {
     return this.http.put<UserLocation>(`${this.apiUrl}/toggle`, { locationEnabled });
   }
 
-  nearby(latitude: number, longitude: number, radiusKm = 5): Observable<NearbyUser[]> {
+  nearby(latitude: number, longitude: number, radiusKm = 0.5): Observable<NearbyUser[]> {
     const params = new HttpParams()
       .set('latitude', latitude)
       .set('longitude', longitude)
